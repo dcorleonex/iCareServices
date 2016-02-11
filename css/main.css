@@ -1,0 +1,41 @@
+.navbar-container{
+  background-color: #ffffff;
+}
+
+.no-margin-bottom{
+	margin-bottom: 0px;
+}
+
+body{
+  background-color: #424242;
+}
+
+.logo-container{
+  background-color: #ffffff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.about-title{
+  font-size: 1.5em;
+}
+.about-content{
+  color: #F5F5F5;
+  background-color: #424242;
+}
+
+.para-heading{
+  padding: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+.para-heading h2{
+}
+.para-heading h2 span{
+    padding: 0.25em 0.5em;
+    border-bottom: 2px solid #ffffff;
+}
+
+.para-content{
+  padding: 1em 1em;
+  font-size: 1.2em;
+}
