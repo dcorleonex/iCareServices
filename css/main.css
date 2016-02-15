@@ -63,19 +63,19 @@
   font-size: 1.2em;
 }
 
-.para-content > .services-item{
+.para-content > .services-item, .para-content .plans-item{
   padding-top: 1em;
 }
-.services-item h3{
+.services-item h3, .plans-item h3{
   font-weight: bold;
   text-align: center;
 }
 
-.services-item img{
+.services-item img, .plans-item img{
   margin: 0em auto;
 }
 
-.services-item ul{
+.services-item ul, .plans-item ul{
   color: #F5F5F5;
   margin: 0em auto;
   padding-top: 1em;
@@ -83,67 +83,50 @@
   padding-right: 0.25em;
   max-width: 450px;
 }
-.services-plumber  h3 {
+.services-plumber  h3, .plans-residential h3{
   color: #283593;
 }
 
-.services-electrician  h3 {
+.services-electrician  h3, .plans-commercial h3{
   color: #AD1457;
 }
 
-.services-carpenter  h3 {
+.services-carpenter  h3, .plans-corporate h3{
   color: #5D4037;
 }
 
-.services-plumber ul{
+.services-plumber ul, .plans-residential ul{
   background-color: #3F51B5;
 }
 
-.services-electrician ul{
+.services-electrician ul, .plans-commercial ul{
   background-color: #E91E63;
 }
 
-.services-carpenter ul{
+.services-carpenter ul, .plans-corporate ul{
   background-color: #795548;
 }
 
-/* Version Horizontal
-.services-plumber > .row{
-  background-color: #2196F3;
-}
-
-.services-electrician > .row{
-  background-color: #F44336;
-}
-
-.services-carpenter > .row{
-  background-color: #795548;
-}
-
-.services-plumber  h3 {
+.plans-residential h3{
   color: #1565C0;
 }
 
-.services-electrician  h3 {
-  color: #C62828;
+.plans-commercial h3{
+  color: #512DA8;
 }
 
-.services-carpenter  h3 {
-  color: #5D4037;
+.plans-corporate h3{
+  color: #00695C;
 }
 
-.services-item h3{
-    font-weight: bold;
-}
-.services-item .row{
-  color: #F5F5F5;
+.plans-residential ul{
+  background-color: #2196F3;
 }
 
-.services-item .row .col-sm-3{
-  padding-left: 0em;
-  padding-right: 0em;
+.plans-commercial ul{
+  background-color: #673AB7;
 }
 
-.services-item .row .col-sm-9{
-  padding-top: 2em;
-}*/
+.plans-corporate ul{
+  background-color: #009688;
+}

@@ -25,24 +25,37 @@ $(document).ready(function(){
 $(window).load(function(){
   //console.log("window loaded");
   adjustServicesItemHeight();
-  adjustServicesSectionDisplay();
+  adjustPlansItemHeight();
+  //adjustServicesSectionDisplay();
 });
 
 $(window).resize(function(){
   //console.log("window resized");
   adjustServicesItemHeight();
+  adjustPlansItemHeight();
 });
 
 function adjustServicesItemHeight(){
 
   /*Only Adjust height if service items are displayed in columns*/
-  if($(window).width()>=650)
+  if($(window).width()>=768)
   {
     var max_height = $('.services-plumber ul').height();
     //console.log(max_height);
     $('.services-electrician ul').height(max_height);
     $('.services-carpenter ul').height(max_height);
   }
+  else {
+    $('.services-electrician ul').height('auto');
+    $('.services-carpenter ul').height('auto');
+  }
+}
+
+function adjustPlansItemHeight(){
+
+  /*Only Adjust height if plans items are displayed in columns*/
+  var max_height = $('.plans-residential ul').height();
+  $('.plans-corporate ul').height(max_height);
 }
 
 function adjustServicesSectionDisplay(){
