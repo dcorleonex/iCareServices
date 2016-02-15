@@ -9,6 +9,8 @@
       <!--jQurey-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--Custom Javascript-->
+    <script src="javascript/main.js"></script>
     <!--Stylesheet Link-->
     <link rel="stylesheet" type="text/css" href='css/main.css'>
     <title>iCareServices</title>
@@ -28,70 +30,154 @@
           </div>
           <div class="collapse navbar-collapse" id="navbar-data">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#about" data-toggle="tab">About</a></li>
-              <li><a href="#services" data-toggle="tab">Services</a></li>
-              <li><a href="#plans" data-toggle="tab">Plans</a></li>
-              <li><a href="#contact" data-toggle="tab">Contact</a></li>
+              <li class="active"><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#plans">Plans</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-    <div class="tab-content">
-      <div class="tab-pane fade in active" id="about">
-       <div class="section-content">
-          <div class="logo-container">
+    <div class="content">
+      <div class="section-content" id="logo-container">
             <div class="container">
               <img class="img-responsive" src="images/logo.jpeg" alt="iCareServices Logo">
             </div>
-          </div>
-          <div class="about-content">
+      </div>
+      <div class="section-content" id="about">
             <div class="container">
               <div class="para-heading">
-                <h2><span>Who Are We?</span></h2>
+                <h2>About Us</h2>
               </div>
               <div class="para-content">
                 <p><span class="about-title">iCareServices</span>, a venture of New Vistas Business Promotions Pvt. Ltd., is a Jabalpur based company that caters to all your home maintenance needs. We offer plumbers, electricians and carpenters for repair work in homes on all three sixty five days of a year. We understand how frustrating it can be when an household appliance breaks down, your drainage pipes get clogged, or you face some other household problem that disturbs your daily routine, so our aim is to solve your household problems as quickly and efficiently as possible. With our services now help is just a call away. Next time if something breaks down in your house, then call one of our toll-free numbers and we will happily get it fixed for you at minimal costs.</p>
               </div>
             </div>
+      </div>
+      <div class="section-content section-alternate" id="services">
+        <div class="container">
+          <div class="para-heading">
+            <h2>Services We Offer</h2>
+          </div>
+          <div class="para-content">
+            <!--Version Horizontal
+            <div class="services-item services-plumber">
+              <h3>Plumbing Services</h3>
+              <div class="row">
+                <div class="col-sm-3">
+                  <img class="img-responsive" src="images/plumber.jpg" alt="plumber">
+                </div>
+                <div class="col-sm-9">
+                  <ul>
+                    <li>Repair and Maintenance of Plumbing System and its Components.</li>
+                    <li>Repair and Maintenance of Water Treatment Equipment, Piping and Controls.</li>
+                    <li>Solve issues related to Sinks, Tubs, and other plumbing fixture.</li>
+                    <li>Solve Water Clogging, Leakage and other related problems.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="services-item services-electrician">
+              <h3>Electrical Services</h3>
+              <div class="row">
+                <div class="col-sm-9">
+                  <ul>
+                    <li>Installation and Maintenance of Electrical Wiring and Equipments.</li>
+                    <li>Repair of malfunctioning electrical devices.</li>
+                    <li>Solve any other electricity related household issue.</li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <img class="img-responsive" src="images/electrician.jpg" alt="electrician">
+                </div>
+              </div>
+            </div>
+            <div class="services-item services-carpenter">
+              <h3>Carpentry Services</h3>
+              <div class="row">
+                <div class="col-sm-3">
+                  <img class="img-responsive" src="images/carpenter.jpg" alt="carpenter">
+                </div>
+                <div class="col-sm-9">
+                  <ul>
+                    <li>General hardware related maintenance and repair work.</li>
+                    <li>Installation of doors, handles, locks and other wooden fixtures.</li>
+                    <li>Any other carpentry related household work.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>-->
+            <!-- Version vertical-->
+            <div class="row">
+              <div class="col-xs-4 services-item services-plumber">
+                <h3>Plumbing Services</h3>
+              </div>
+              <div class="col-xs-4 services-item services-electrician">
+                <h3>Electrical Services</h3>
+              </div>
+              <div class="col-xs-4 services-item services-carpenter">
+                <h3>Carpentry Services</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <img class="img-responsive" src="images/plumber.jpg" alt="plumber">
+              </div>
+              <div class="col-xs-4">
+                <img class="img-responsive" src="images/electrician.jpg" alt="electrician">
+              </div>
+              <div class="col-xs-4">
+                <img class="img-responsive" src="images/carpenter.jpg" alt="carpenter">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4 services-item services-plumber">
+                <ul>
+                  <li>Repair and Maintenance of Plumbing System and its Components.</li>
+                  <li>Repair and Maintenance of Water Treatment Equipment, Piping and Controls.</li>
+                  <li>Solve issues related to Sinks, Tubs, and other plumbing fixture.</li>
+                </ul>
+              </div>
+              <div class="col-xs-4 services-item services-electrician">
+                <ul>
+                  <li>Installation and Maintenance of Electrical Wiring and Equipments.</li>
+                  <li>Repair of malfunctioning electrical devices.</li>
+                  <li>Solve any other electricity related household issue.</li>
+                </ul>
+              </div>
+              <div class="col-xs-4 services-item services-carpenter">
+                <ul>
+                  <li>General hardware related maintenance and repair work.</li>
+                  <li>Installation of doors, handles, locks and other wooden fixtures.</li>
+                  <li>Any other carpentry related household work.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="services">
-        <div class="container section-content">
-          <h2>Services We Offer</h2>
-          <div class="services-item">
-            <h3>Plumbing Services</h3>
-            <ul>
-              <li>Repair and Maintenance of Plumbing System and its Components.</li>
-              <li>Repair and Maintenance of Water Treatment Equipment, Piping and Controls.</li>
-              <li>Solve issues related to Sinks, Tubs, and other plumbing fixture.</li>
-              <li>Solve Water clogging, leakage and other related problems.</li>
-            </ul>
-          </div>
-          <div class="services-item">
-            <h3>Electrical Services</h3>
-            <ul>
-              <li>Installation and Maintenance of Electrical Wiring and Equipments.</li>
-              <li>Repair of malfunctioning electrical devices.</li>
-              <li>Solve any other electricity related household issue.</li>
-            </ul>
-          </div>
-          <div class="services-item">
-            <h3>Carpentry Services</h3>
-            <ul>
-              <li>General hardware related maintenance and repair work.</li>
-              <li>Installation of doors, handles, locks and other wooden fixtures.</li>
-              <li>Any other carpentry related household work.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="container tab-pane fade" id="plans">
+      <div class="section-content section-alternate" id="plans">
+        <div class="container">
         Plans Section.....
+        </div>
       </div>
-      <div class="container tab-pane fade" id="contact">
-        Contact Section.....
+      <div class="section-content" id="contact">
+        <div class="container">
+          <div class="para-heading">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="para-content">
+            <div class="row">
+              <div class="col-sm-6">
+                <p><b>iCareServices</b><br>A/3 Poonam Plaza,<br>Beside Naveen Bidhya Bhawan<br>Napier Town, Jabalpur</p>
+              </div>
+              <div class="col-sm-6">
+                <p>Tel: 0761-2450047, 2450120, 4046363<br>Toll Free: 1800 833 9919</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

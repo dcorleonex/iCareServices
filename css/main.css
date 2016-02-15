@@ -6,36 +6,144 @@
 	margin-bottom: 0px;
 }
 
-body{
-  background-color: #424242;
+.section-content{
+  padding: 2.5em 0em;
 }
 
-.logo-container{
+#logo-container{
   background-color: #ffffff;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 0em;
 }
+
+#contact{
+  text-align: center;
+}
+@media (min-width: 768px) {
+
+  #contact{
+    text-align: left;
+  }
+
+}
+
+.section-content{
+  color: #F5F5F5;
+  background-color: #333333;
+}
+
+.section-alternate{
+    color: #000000;
+    background-color: #ffffff;
+}
+
 .about-title{
   font-size: 1.5em;
-}
-.about-content{
-  color: #F5F5F5;
-  background-color: #424242;
+  font-weight: bold;
 }
 
 .para-heading{
-  padding: 1em;
+  padding: 0em 1em;
+  margin-bottom: 1.5em;
   font-weight: bold;
   text-align: center;
+  text-transform: capitalize;;
 }
 .para-heading h2{
-}
-.para-heading h2 span{
+    display: inline-block;
     padding: 0.25em 0.5em;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.section-alternate .para-heading h2{
+  border-bottom-color: #333333;
 }
 
 .para-content{
   padding: 1em 1em;
   font-size: 1.2em;
 }
+
+.para-content > .services-item{
+  padding-top: 1em;
+}
+.services-item h3{
+  font-weight: bold;
+  text-align: center;
+}
+
+.services-item img{
+  margin: 0em auto;
+}
+
+.services-item ul{
+  color: #F5F5F5;
+  margin: 0em auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 0.25em;
+  max-width: 450px;
+}
+.services-plumber  h3 {
+  color: #283593;
+}
+
+.services-electrician  h3 {
+  color: #AD1457;
+}
+
+.services-carpenter  h3 {
+  color: #5D4037;
+}
+
+.services-plumber ul{
+  background-color: #3F51B5;
+}
+
+.services-electrician ul{
+  background-color: #E91E63;
+}
+
+.services-carpenter ul{
+  background-color: #795548;
+}
+
+/* Version Horizontal
+.services-plumber > .row{
+  background-color: #2196F3;
+}
+
+.services-electrician > .row{
+  background-color: #F44336;
+}
+
+.services-carpenter > .row{
+  background-color: #795548;
+}
+
+.services-plumber  h3 {
+  color: #1565C0;
+}
+
+.services-electrician  h3 {
+  color: #C62828;
+}
+
+.services-carpenter  h3 {
+  color: #5D4037;
+}
+
+.services-item h3{
+    font-weight: bold;
+}
+.services-item .row{
+  color: #F5F5F5;
+}
+
+.services-item .row .col-sm-3{
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+.services-item .row .col-sm-9{
+  padding-top: 2em;
+}*/
