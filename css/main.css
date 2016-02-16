@@ -63,6 +63,16 @@
   font-size: 1.2em;
 }
 
+.sub-para{
+  padding: 0.5em 0em;
+}
+.sub-para h4{
+  font-weight: bold;
+}
+.sub-para h4, .sub-para p{
+  display: inline-block;
+}
+
 .para-content > .services-item, .para-content .plans-item{
   padding-top: 1em;
 }
